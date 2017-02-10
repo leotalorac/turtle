@@ -17,8 +17,11 @@ public class POO {
        square(-100,-50,100,100);
        square(-50,-50,100,100);
        square(-100,0,50,50);
-       joe.right(180);
-       triangle(100,100,50);
+
+       circle(120,50,1);
+
+
+
    } 
    
     /**
@@ -51,11 +54,14 @@ public class POO {
             joe.fd(c);
             joe.right(120);
             joe.fd(c);
-
-
     }
 
-
-
-    
+    public void circle(double a, double b,int c){
+        joe.setX(a);
+        joe.setY(b);
+        for(int i=0;i<360;i++){
+            joe.right(1);
+            joe.fd(c);
+        }
+    }
 }
